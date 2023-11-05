@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("background image.jpg");
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(241, 74, 74);
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px #ccc;
+}
+
+.apply_box {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 4px 3px 5px rgb(1, 1, 1, 0.1);
+    border-radius: 10px;
+}
+
+.form_container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 6px 10px;
+    border: 2px solid rgb(179, 0, 255);
+    border-radius: 6px;
+    box-shadow: 4px 3px 5px rgb(1, 1, 1, 0.1);
+}
+
+input:hover, textarea:hover,select:hover{
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.button_container{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+button{
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(243, 63, 63);
+    border-radius: 6px;
+    border: transparent solid 2px;
+    font-size: medium;
+}
+
+button{transition-timing-function: ease-in;}
+
+button:hover{
+    background-color: aqua;
+    color: black;
+    border: 1.5px solid black;
+    transition: 0.5s;
+}
